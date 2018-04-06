@@ -17,6 +17,7 @@ port-index:
 .PHONY: livecheck
 livecheck:
 	@port livecheck maintainer:emcrisostomo
+	@port livecheck maintainer:patarra
 	@for i in $$(cat $(PORTS_FILE)) ; \
 	do \
 		port livecheck $${i} || true ; \
