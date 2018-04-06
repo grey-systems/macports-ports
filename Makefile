@@ -3,6 +3,8 @@ LOCAL_PORTS_DIR:=       ~/ports
 PORT_INDEX_SENTINEL:=   $(LOCAL_PORTS_DIR)/.port-index.sentinel
 
 .PHONY: all
+all:
+	@echo "Nothing to do."
 
 $(PORT_INDEX_SENTINEL):
 	@$(MAKE) port-index
